@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Medicine</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: auto;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #DDD;
+        }
+        tr:hover {background-color: #D6EEEE;}
+    </style>
+</head>
+<body>
+<h1>Medicines</h1>
+<a href="/medicines/new">Add New Medicine</a>
+<table style="align-items: center">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="medicine : ${medicines}">
+        <td th:text="${medicine.name}"></td>
+        <td th:text="${medicine.price}"></td>
+        <td th:text="${medicine.quantity}"></td>
+    </tr>
+    </tbody>
+</table>
+<h3>End</h3>
+<a href="/customers">Customer</a>
+</body>
+</html>

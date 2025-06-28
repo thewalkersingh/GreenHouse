@@ -1,0 +1,79 @@
+[
+    {
+        "id": 1,
+        "movieTitle": "Inception",
+        "movieYear": "2010",
+        "movieDuration": 148.0,
+        "movieDescription": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.",
+        "mediaLinks": ["https://example.com/inception.jpg"],
+        "movieLanguage": ["English"],
+        "genres": ["Science Fiction", "Action"],
+        "casts": [
+            {
+             
+                "name": "Leonardo DiCaprio",
+                "about": "An American actor and producer known for his work in films like Inception, Titanic, and The Revenant.",
+                "roles": ["Dom Cobb"],
+                "profile": "https://example.com/dicaprio.jpg"
+            },
+            {
+                "name": "Joseph Gordon-Levitt",
+                "about": "An American actor, filmmaker, and entrepreneur known for his roles in Inception and (500) Days of Summer.",
+                "roles": ["Arthur"],
+                "profile": "https://example.com/gordonlevitt.jpg"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "movieTitle": "The Godfather",
+        "movieYear": "1972",
+        "movieDuration": 175.0,
+        "movieDescription": "An organized crime dynasty's aging patriarch transfers control of his clandestine empire to his reluctant son.",
+        "mediaLinks": ["https://example.com/godfather.jpg"],
+        "movieLanguage": ["English", "Italian"],
+        "genres": ["Crime", "Drama"],
+        "casts": [
+            {
+                "id": 3,
+                "name": "Marlon Brando",
+                "about": "An American actor and film director, considered one of the greatest actors of all time.",
+                "roles": ["Vito Corleone"],
+                "profile": "https://example.com/brando.jpg"
+            },
+            {
+                "id": 4,
+                "name": "Al Pacino",
+                "about": "An American actor and filmmaker, known for his roles in The Godfather and Scarface.",
+                "roles": ["Michael Corleone"],
+                "profile": "https://example.com/pacino.jpg"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "movieTitle": "The Dark Knight",
+        "movieYear": "2008",
+        "movieDuration": 152.0,
+        "movieDescription": "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
+        "mediaLinks": ["https://example.com/darkknight.jpg"],
+        "movieLanguage": ["English"],
+        "genres": ["Action", "Crime", "Drama"],
+        "casts": [
+            {
+                "id": 5,
+                "name": "Christian Bale",
+                "about": "An English actor known for his transformative performances and intense dedication to his roles.",
+                "roles": ["Bruce Wayne / Batman"],
+                "profile": "https://example.com/bale.jpg"
+            },
+            {
+                "id": 6,
+                "name": "Heath Ledger",
+                "about": "An Australian actor and director, widely regarded as one of the greatest actors of his generation.",
+                "roles": ["The Joker"],
+                "profile": "https://example.com/ledger.jpg"
+            }
+        ]
+    }
+]

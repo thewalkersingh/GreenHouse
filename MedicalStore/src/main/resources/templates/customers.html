@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Customers</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            height: fit-content;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #DDD;
+        }
+
+        tr:hover {
+            background-color: #D6EEEE;
+        }
+    </style>
+</head>
+<body>
+<h1>Customers</h1>
+<a href="/customers/new">Add New Customer</a>
+
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Contact</th>
+        <th>Address</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="customer : ${customers}">
+        <td th:text="${customer.name}"></td>
+        <td th:text="${customer.contact}"></td>
+        <td th:text="${customer.address}"></td>
+    </tr>
+    </tbody>
+</table>
+<h3>End</h3>
+<a href="/medicines">Medicines</a>
+</body>
+</html>

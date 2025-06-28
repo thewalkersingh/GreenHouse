@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Medicine</title>
+</head>
+<body>
+<h3>Add Medicines</h3>
+<form action="#" th:action="@{/medicines}" th:object="${medicine}" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" th:field="*{name}"/>
+    <label for="contact">Description</label>
+    <input type="text" id="contact" th:field="*{description}"/>
+    <label for="address">Price</label>
+    <input type="text" id="address" th:field="*{price}"/>
+    <label for="quantity">Quantity</label>
+    <input type="text" id="quantity" th:field="*{quantity}"/>
+    <button type="submit">Save</button>
+</form>
+<a href="/medicines">Medicines</a>
+</body>
+</html>
