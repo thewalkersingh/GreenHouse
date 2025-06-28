@@ -1,0 +1,75 @@
+INSERT INTO Cast (id, name, about, profile_Link) VALUES
+(1, 'Amitabh Bachchan', 'Indian actor known for his deep baritone voice and versatile acting.', 'https://example.com/amitabh-profile'),
+(2, 'Priyanka Chopra', 'Indian actress and singer, known for her work in Bollywood and Hollywood.', 'https://example.com/priyanka-profile'),
+(3, 'Shah Rukh Khan', 'Famous Bollywood actor known as the King of Romance.', 'https://example.com/srk-profile'),
+(4, 'Deepika Padukone', 'Indian actress known for her powerful performances in Bollywood films.', 'https://example.com/deepika-profile'),
+(5, 'Rajinikanth', 'South Indian superstar known for his style and action movies.', 'https://example.com/rajinikanth-profile');
+
+
+INSERT INTO cast_occupation (cast_id, occupation) VALUES
+(1, 'Actor'), (1, 'Producer'),
+(2, 'Actor'), (2, 'Singer'), (2, 'Philanthropist'),
+(3, 'Actor'), (3, 'Producer'),
+(4, 'Actor'), (4, 'Producer'),
+(5, 'Actor');
+
+
+INSERT INTO Location (city, region, pin, address, latitude, longitude) VALUES
+('Mumbai', 'Maharashtra', '400001', '123 Marine Drive, Mumbai', 18.9358, 72.8240),
+('Delhi', 'Delhi', '110001', 'Rajpath Marg, New Delhi', 28.6139, 77.2090),
+('Bangalore', 'Karnataka', '560001', 'MG Road, Bangalore', 12.9716, 77.5946),
+('Hyderabad', 'Telangana', '500001', 'Charminar, Hyderabad', 17.3616, 78.4747),
+('Chennai', 'Tamil Nadu', '600001', 'Marina Beach Road, Chennai', 13.0827, 80.2707);
+
+INSERT INTO movie (id, movie_name, movie_year, movie_duration, movie_description) VALUES
+    (1, 'The Indian Epic', '2022', 2.5, 'An epic tale of heroism and loyalty set in ancient India.'),
+    (2, 'Mystic Hills', '2023', 1.8, 'A thriller unraveling secrets hidden within a remote Indian village.'),
+    (3, 'Tech Giants', '2021', 2.0, 'A documentary on India’s booming tech industry.'),
+    (4, 'Freedom Struggle', '2020', 3.0, 'The untold stories of India’s struggle for independence.'),
+    (5, 'City of Dreams', '2024', 1.5, 'An inspiring drama about pursuing dreams in the fast-paced city of Mumbai.');
+
+
+INSERT INTO movie_media_links (movie_id, media_links) VALUES
+    (1, 'https://example.com/indian_epic_trailer.mp4'),
+    (2, 'https://example.com/mystic_hills_trailer.mp4'),
+    (3, 'https://example.com/tech_giants_trailer.mp4'),
+    (4, 'https://example.com/freedom_struggle_trailer.mp4'),
+    (5, 'https://example.com/city_of_dreams_trailer.mp4');
+	
+INSERT INTO movie_movie_language (movie_id, movie_language) VALUES
+    (1, 'Hindi'),
+    (1, 'English'),
+    (2, 'Tamil'),
+    (3, 'English'),
+    (4, 'Hindi'),
+    (5, 'Marathi');
+	
+INSERT INTO movie_genres (movie_id, genres) VALUES
+    (1, 'Historical'),
+    (1, 'Drama'),
+    (2, 'Thriller'),
+    (3, 'Documentary'),
+    (4, 'Biographical'),
+    (5, 'Drama');
+	
+INSERT INTO movie_cast (movie_id, cast_id) VALUES
+    (1, 1),
+    (1, 2),
+    (2, 3),
+    (3, 1),
+    (4, 4),
+    (5, 5);
+	
+INSERT INTO theatre (id, name, total_screens, location_id) VALUES
+    (1, 'PVR Cinemas', 5, 1),
+    (2, 'Inox', 4, 2),
+    (3, 'Cinepolis', 3, 3);
+
+
+
+INSERT INTO user (id, first_name, last_name, username, email, password, phone, role) VALUES
+    (1, 'John', 'Doe', 'johndoe', 'johndoe@example.com', 'password123', '1234567890', 'ADMIN'),
+    (2, 'Jane', 'Smith', 'janesmith', 'janesmith@example.com', 'password123', '0987654321', 'USER'),
+    (3, 'Michael', 'Johnson', 'mjohnson', 'mjohnson@example.com', 'password123', '1122334455', 'USER'),
+    (4, 'Emily', 'Davis', 'emilyd', 'emilyd@example.com', 'password123', '2233445566', 'USER'),
+    (5, 'David', 'Brown', 'davidb', 'davidb@example.com', 'password123', '3344556677', 'USER');

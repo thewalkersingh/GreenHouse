@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: revive
+#spring.data.mongodb.database=revive
+#spring.data.mongodb.password=admin
